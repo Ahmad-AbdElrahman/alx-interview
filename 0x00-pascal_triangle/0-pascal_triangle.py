@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+pascale triangle project
+"""
 def pascal_triangle(n):
+    """
+    print the pascal triange
+    """
     if isinstance(n, int):
         if (n > 0):
             pascal_list = [[1]]

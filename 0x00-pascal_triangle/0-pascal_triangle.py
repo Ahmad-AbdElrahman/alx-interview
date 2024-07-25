@@ -5,8 +5,8 @@ pascale triangle project
 
 
 def pascal_triangle(n):
-    """
-    print the pascal triange
+    """ returns a list of lists of
+    the pascal triange
     """
     if isinstance(n, int):
         if (n > 0):
@@ -25,4 +25,3 @@ def pascal_triangle(n):
             return []
     else:
         print("Please enter an integer")
-

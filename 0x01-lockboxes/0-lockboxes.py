@@ -5,19 +5,14 @@ Lockbox project
 
 
 def canUnlockAll(boxes):
-    """
-    solving Lockbox project
-    """
+    """ method that determines if all the boxes can be opened. """
     n = len(boxes)
-    open_boxes = [boxes[0]]
-    for box in open_boxes:
-        for key in box:
-            for j in range(n):
-                if boxes[j] not in open_boxes:
-                    if key == j or len(boxes[j]) == 0:
-                        open_boxes.append(boxes[j])
-                else:
-                    continue
-    if len(open_boxes) == n:
+    myList = [0]
+    for i in myList:
+        for j in boxes[i]:
+            if j not in myList:
+                if j < n:
+                    myList.append(j)
+    if len(myList) == n:
         return True
     return False

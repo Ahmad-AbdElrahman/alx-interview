@@ -8,6 +8,10 @@ def canUnlockAll(boxes):
     """
     solving Lockbox project
     """
+    n = len(boxes)
+    if n == 0:
+        return False
+    
     open_boxes = [boxes[0]]
     for box in open_boxes:
         for key in box:
